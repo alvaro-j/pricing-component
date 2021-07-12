@@ -1,3 +1,4 @@
+/*================== GERAL ==================================================*/
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +33,7 @@ hr {
 
 section h1 {
     color: var(--gray);
-    margin-bottom: 20px;
+    margin-bottom: 37px;
     font-size: 2rem;
 }
 
@@ -40,28 +41,73 @@ section h2 {
     font-size: 18px;
     color: var(--gray);
 }
+/*================== TOGGLE BUTTON ===============================================*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  margin: 0 20px;
+}
 
-#toggle {
-    font-size: 15px;
+/* Paragraph config*/
+#toggle-p {
     color: var(--light-gray);
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
-#toggle button {
-    margin: 0 10px;
-    border-radius: 15px;
-    width: 50px;
-    height: 30px;
-    background-image: linear-gradient(90deg, hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-#toggle-circle {
-    background-color: #fff;
-    border-radius: 100%;
-    float: right;
-    
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 21px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(90deg,  hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px hsl(237, 63%, 64%);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*================== CARDS ========================================================*/
 .card-white {
     background-color: #fff;
     box-shadow: 1px 1px 20px hsla(234, 13%, 49%, 0.199);
@@ -97,7 +143,7 @@ section h2 {
 .p-white {
     color: var(--very-light-gray);
 }
-
+/*================== BUTTONS =====================================================*/
 .btn-purple {
     background: linear-gradient(90deg, hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
     border-radius: 8px;
@@ -107,6 +153,7 @@ section h2 {
     letter-spacing: 2px;
     width: 260px;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .btn-white {
@@ -116,10 +163,11 @@ section h2 {
     background-color: #fff;
     border-radius: 8px;
     letter-spacing: 2px;
-    width: 265px;
+    width: 260px;
     margin-top: 15px;
+    cursor: pointer;
 }
-
+/*================== PRICES ====================================================*/
 .price-gray {
     font-size: 4rem;
     color: var(--dark-gray);
@@ -130,19 +178,24 @@ section h2 {
     color: var(--very-light-gray);
 }
 
+.price-hide {
+    display: none;
+}
+
 .price-white span, .price-gray span {
     font-size: 40px;
 }
 
+/*================== FOOTER ====================================================*/
 .attribution { 
-  font-size: 11px; 
-  text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
 }
 
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%); 
 }
-
+/*================== RESPONSIVE ====================================================*/
 @media (min-width: 1440px) {
     #container {
         display: flex;
