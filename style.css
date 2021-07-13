@@ -9,13 +9,16 @@
     --light-gray: hsl(234, 14%, 74%);
     --gray: hsl(233, 13%, 49%);
     --dark-gray: hsl(232, 13%, 33%);
+    --purple: hsl(237, 63%, 64%);
+    --light-purple: hsl(236, 72%, 79%);
 }
 
 body {
     background-color: #f7f7ff;
     font-family: 'Montserrat', sans-serif;
-    background-image: url(images/bg-top.svg);
-    background-size: contain;
+    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+    background-position: top right, bottom left;
+    background-size: 450px , 320px;
     background-repeat: no-repeat;
 }
 
@@ -75,7 +78,7 @@ section h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-image: linear-gradient(90deg, var(--light-purple), var(--purple));
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -91,12 +94,8 @@ section h2 {
   transition: .4s;
 }
 
-input:checked + .slider {
-  background-image: linear-gradient(90deg,  hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
-}
-
 input:focus + .slider {
-  box-shadow: 0 0 1px hsl(237, 63%, 64%);
+  box-shadow: 0 0 1px var(--purple);
 }
 
 input:checked + .slider:before {
@@ -127,7 +126,7 @@ input:checked + .slider:before {
 }
 
 .card-purple {
-    background-image: linear-gradient(hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+    background-image: linear-gradient(var(--light-purple) ,var(--purple));
     box-shadow: 1px 1px 20px hsla(234, 13%, 49%, 0.199);
     margin-bottom: 30px;
     border-radius: 8px;
@@ -149,7 +148,7 @@ input:checked + .slider:before {
 }
 /*================== BUTTONS =====================================================*/
 .btn-purple {
-    background: linear-gradient(90deg, hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+    background: linear-gradient(90deg, var(--light-purple), var(--purple));
     border-radius: 8px;
     color: #fff;
     padding: 14px 0;
@@ -160,16 +159,30 @@ input:checked + .slider:before {
     cursor: pointer;
 }
 
+.btn-purple:hover {
+    color: var(--purple);
+    background-image: none;
+    border: 1px solid var(--purple);
+    transition: all .4s;
+}
+
 .btn-white {
     padding: 14px 0;
     font-family: 'Montserrat';
-    color: hsl(237, 63%, 64%);
+    color: var(--purple);
     background-color: #fff;
     border-radius: 8px;
     letter-spacing: 2px;
     width: 260px;
     margin-top: 15px;
     cursor: pointer;
+}
+
+.btn-white:hover {
+    color: var(--very-light-gray);
+    background-color: transparent;
+    border: 1px solid var(--very-light-gray);
+    transition: all .4s;
 }
 /*================== PRICES ====================================================*/
 .price-gray {
@@ -215,5 +228,6 @@ input:checked + .slider:before {
     .card-purple {
         height: 430px;
         transform: translateY(-15px);
+        padding-top: 45px;
     }
 }
