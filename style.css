@@ -79,7 +79,6 @@ section h2 {
   right: 0;
   bottom: 0;
   background-image: linear-gradient(90deg, var(--light-purple), var(--purple));
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -93,6 +92,10 @@ section h2 {
   background-color: var(--very-light-gray);
   transition: .4s;
 }
+
+/*input:checked + .slider {
+  background-image: linear-gradient(90deg, var(--light-purple), var(--purple));
+}*/
 
 input:focus + .slider {
   box-shadow: 0 0 1px var(--purple);
@@ -195,11 +198,7 @@ input:checked + .slider:before {
     color: var(--very-light-gray);
 }
 
-.price-hide {
-    display: none;
-}
-
-.price-white span, .price-gray span {
+.dolar {
     font-size: 40px;
 }
 
@@ -226,7 +225,7 @@ input:checked + .slider:before {
     }
 
     .card-purple {
-        height: 430px;
+        height: 420px;
         transform: translateY(-15px);
         padding-top: 45px;
     }
