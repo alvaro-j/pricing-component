@@ -1,12 +1,12 @@
 var checkbox = document.getElementById('checkbox')
 checkbox.addEventListener("change" , check)
-var price_show = document.getElementsByClassName('price-show')
-var price_2 = document.getElementsByClassName('price-2')
+var price = document.getElementsByClassName('price')
 
 function check() {
   var i; 
-  for (i = 0; i < price_show.length; i++) {
-    price_show[i].className = "price-hide";
-    price_2[i].className = "price-show";
-    }
+  for (i = 0; i < price.length; i++) {
+    price[0].innerHTML = "199.99";
+    price[1].innerHTML = "249.99";
+    price[2].innerHTML = "399.99";
+ }
 }
