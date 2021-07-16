@@ -93,10 +93,6 @@ section h2 {
   transition: .4s;
 }
 
-/*input:checked + .slider {
-  background-image: linear-gradient(90deg, var(--light-purple), var(--purple));
-}*/
-
 input:focus + .slider {
   box-shadow: 0 0 1px var(--purple);
 }
