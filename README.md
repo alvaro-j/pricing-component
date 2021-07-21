@@ -43,8 +43,6 @@ Users should be able to:
 
 ### What I learned
 
-Translate a element using CSS and select all elements with the same class:
-
 - Use <b>transform</b> to move an element: in this case, i wanted to move the slider to the other side.
 ```css
 input:checked + .slider:before {
