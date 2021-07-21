@@ -2,19 +2,19 @@
 
 This is a solution to the [Pricing component with toggle challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
+## Table of contents✒️
 
-- [Overview](#overview)
+- [Overview](#overview)🎯
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
+- [My process](#my-process)🧩
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
-- [Author](#author)
+- [Author](#author)🙋🏻
 
-## Overview
+## Overview🎯
 
 ### The challenge
 
@@ -31,7 +31,7 @@ Users should be able to:
 
 - Live Site URL: [https://alvaro-j.github.io/pricing-component/](https://alvaro-j.github.io/pricing-component/)
 
-## My process
+## My process🧩
 
 ### Built with
 
@@ -64,7 +64,7 @@ if (checkbox.checked == true) {
 
 - [Toggle example from W3Schools](https://www.w3schools.com/howto/howto_css_switch.asp) - This helped me to learn about a toggle switch button. I really liked this type of button and will use it going forward.
 
-## Author
+## Author🙋🏻
 
 - Github - [Álvaro J.](https://www.github.com/alvaro-j/)
 - Frontend Mentor - [@alvaro-j](https://www.frontendmentor.io/profile/alvaro-j)
