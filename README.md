@@ -39,16 +39,19 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - JavaScript
+- Responsive design with mobile-first workflow
 
 ### What I learned
 
 Translate a element using CSS and select all elements with the same class:
 
+- Use <b>transform</b> to move an element: in this case, i wanted to move the slider to the other side.
 ```css
 input:checked + .slider:before {
   transform: translateX(26px);
 }
 ```
+- Use <b>for</b> to select multiples elements: in this case, i wanted to change the text from the price.
 ```js
 if (checkbox.checked == true) {
     for (i = 0; i < price.length; i++) {
