@@ -7,10 +7,10 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
 - [Overview](#overview)🎯
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Links](#links)🔗
 - [My process](#my-process)🧩
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [Built with](#built-with)🔨
+  - [What I learned](#what-i-learned)📝
   - [Useful resources](#useful-resources)
 - [Author](#author)🙋🏻
 
@@ -27,13 +27,13 @@ Users should be able to:
 
 ![image](https://user-images.githubusercontent.com/86482525/125686926-5dc70f19-d1cb-40e8-bf23-668425f66c31.png)
 
-### Links
+### Links🔗
 
 - Live Site URL: [https://alvaro-j.github.io/pricing-component/](https://alvaro-j.github.io/pricing-component/)
 
 ## My process🧩
 
-### Built with
+### Built with🔨
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -41,15 +41,15 @@ Users should be able to:
 - JavaScript
 - Responsive design with mobile-first workflow
 
-### What I learned
+### What I learned📝
 
-- Use <b>transform</b> to move an element: in this case, i wanted to move the slider to the other side.
+- Use <strong>transform</strong> to move an element: in this case, i wanted to move the slider to the other side.
 ```css
 input:checked + .slider:before {
   transform: translateX(26px);
 }
 ```
-- Use <b>for</b> to select multiples elements: in this case, i wanted to change the text from the price.
+- Use <strong>for</strong> to select multiples elements: in this case, i wanted to change the text from the price.
 ```js
 if (checkbox.checked == true) {
     for (i = 0; i < price.length; i++) {
