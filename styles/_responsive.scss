@@ -1,0 +1,19 @@
+/*================== RESPONSIVE ====================================================*/
+@media (min-width: 375px) {
+    #container {
+        display: block;
+    }
+}
+
+@media (min-width: 950px) {
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-purple {
+        height: 420px;
+        transform: translateY(-15px);
+        padding-top: 45px;
+    }
+}

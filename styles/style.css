@@ -1,0 +1,240 @@
+/*================== TOGGLE BUTTON ===============================================*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  margin: 0 20px;
+  /* Hide default HTML checkbox */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Paragraph config*/
+#toggle-p {
+  color: #b3b5c6;
+  margin-bottom: 80px;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(90deg, #a3a8f0, #696fdd);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 21px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f6f6fe;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #696fdd;
+          box-shadow: 0 0 1px #696fdd;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*================== CARDS ========================================================*/
+.card-white {
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 20px rgba(109, 112, 141, 0.199);
+          box-shadow: 1px 1px 20px rgba(109, 112, 141, 0.199);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding: 30px 25px;
+  height: 400px;
+  color: #6d708d;
+}
+
+.card-white h2 {
+  margin-bottom: 15px;
+}
+
+.card-purple {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+  -webkit-box-shadow: 1px 1px 20px rgba(109, 112, 141, 0.199);
+          box-shadow: 1px 1px 20px rgba(109, 112, 141, 0.199);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding: 30px;
+  height: 400px;
+}
+
+.card-purple h2 {
+  color: #f6f6fe;
+  margin-bottom: 15px;
+}
+
+.card-purple hr {
+  color: rgba(246, 246, 254, 0.336);
+}
+
+.p-white {
+  color: #f6f6fe;
+}
+
+/*================== BUTTONS =====================================================*/
+.btn-purple {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  border-radius: 8px;
+  color: #fff;
+  padding: 14px 0;
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  width: 260px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.btn-purple:hover {
+  color: #696fdd;
+  background-image: none;
+  border: 1px solid #696fdd;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn-white {
+  padding: 14px 0;
+  font-family: "Montserrat";
+  color: #696fdd;
+  background-color: #fff;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  width: 260px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.btn-white:hover {
+  color: #f6f6fe;
+  background-color: transparent;
+  border: 1px solid #f6f6fe;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/*================== PRICES ====================================================*/
+.price-gray {
+  font-size: 4rem;
+  color: #494c5f;
+}
+
+.price-white {
+  font-size: 4rem;
+  color: #f6f6fe;
+}
+
+.dolar {
+  font-size: 40px;
+}
+
+/*================== RESPONSIVE ====================================================*/
+@media (min-width: 375px) {
+  #container {
+    display: block;
+  }
+}
+
+@media (min-width: 950px) {
+  #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-purple {
+    height: 420px;
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+    padding-top: 45px;
+  }
+}
+
+/*================== GERAL ==================================================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7ff;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
+  background-position: top right, bottom left;
+  background-size: 450px, 320px;
+  background-repeat: no-repeat;
+}
+
+section {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 50px 15px;
+}
+
+section h1 {
+  color: #6d708d;
+  margin-bottom: 37px;
+  font-size: 2rem;
+}
+
+section h2 {
+  font-size: 18px;
+  color: #6d708d;
+}
+
+hr {
+  color: rgba(179, 181, 198, 0.192);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#container {
+  text-align: 1;
+}
+
+/*================== FOOTER ====================================================*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

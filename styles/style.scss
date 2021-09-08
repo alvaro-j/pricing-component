@@ -1,0 +1,57 @@
+@import "variables";
+@import "toggleBtn";
+@import "cards";
+@import "buttons";
+@import "prices";
+@import "responsive";
+/*================== GERAL ==================================================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7ff;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
+  background-position: top right, bottom left;
+  background-size: 450px, 320px;
+  background-repeat: no-repeat;
+}
+
+section {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 50px 15px;
+
+  h1 {
+    color: $gray;
+    margin-bottom: 37px;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 18px;
+    color: $gray;
+  }
+}
+
+hr {
+  color: hsla(234, 14%, 74%, 0.192);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#container {
+  text-align: 1;
+}
+
+/*================== FOOTER ====================================================*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

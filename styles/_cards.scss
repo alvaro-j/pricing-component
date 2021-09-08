@@ -1,0 +1,36 @@
+/*================== CARDS ========================================================*/
+.card-white {
+  background-color: #fff;
+  box-shadow: 1px 1px 20px hsla(234, 13%, 49%, 0.199);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding: 30px 25px;
+  height: 400px;
+  color: $gray;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+}
+
+.card-purple {
+  background-image: linear-gradient($lightPurple, $purple);
+  box-shadow: 1px 1px 20px hsla(234, 13%, 49%, 0.199);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding: 30px;
+  height: 400px;
+
+  h2 {
+    color: $veryLightGray;
+    margin-bottom: 15px;
+  }
+
+  hr {
+    color: hsla(240, 80%, 98%, 0.336);
+  }
+}
+
+.p-white {
+  color: $veryLightGray;
+}
